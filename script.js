@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 如果你的仓库名不是 'webphoto'，请在这里修改
     const repoName = 'webhost'; 
     // 存放照片的文件夹名
-    const photoDir = 'photos'; 
+    const photoDir = 'photo'; 
     // --- 配置结束 ---
 
     const gallery = document.getElementById('gallery');
