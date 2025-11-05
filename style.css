@@ -1,65 +1,28 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+/* 移除所有元素的默认边距和内边距 */
+* {
     margin: 0;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #fff;
-    padding: 20px 40px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-header h1 {
-    margin: 0;
-    color: #2c3e50;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 15px;
-}
-
-.gallery-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
-.gallery-item img {
+/* 让html和body占满整个视口高度 */
+html, body {
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden; /* 隐藏滚动条 */
+    background-color: #000; /* 图片加载时的背景色，黑色比较好 */
+}
+
+/* 设置链接和图片的样式 */
+#redirectLink, #displayImage {
     display: block;
-}
-
-.loading {
-    text-align: center;
     width: 100%;
-    grid-column: 1 / -1; /* 让加载提示占据整行 */
-    font-size: 1.2em;
-    color: #777;
+    height: 100%;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #888;
+#displayImage {
+    /* 关键：让图片自适应容器大小，保持比例，并居中裁剪 */
+    object-fit: cover; 
+    object-position: center;
+    cursor: pointer; /* 鼠标悬停时显示为手型，提示可以点击 */
 }
