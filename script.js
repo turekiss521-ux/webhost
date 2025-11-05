@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const repoName = 'webhost'; 
     
     // 3. 请将 '你的图片文件名.jpg' 替换为你要展示的那张图片的文件名
-    const imageName = '动漫篇（2）.jpg'; 
+    const imageName = '动漫篇 (2).jpg'; 
     // --- 配置结束 ---
 
     // 构建图片的直接访问URL
