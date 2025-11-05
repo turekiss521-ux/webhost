@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的相册</title>
+    <title>展示</title> <!-- 标题不会显示在页面上 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>我的在线相册</h1>
-        <p>这是一个由 GitHub 和 Cloudflare Pages 驱动的自动化相册。</p>
-    </header>
-    <main>
-        <div id="gallery" class="gallery-container">
-            <!-- JavaScript 将在这里自动填充照片 -->
-            <p class="loading">正在加载照片，请稍候...</p>
-        </div>
-    </main>
-    <footer>
-        <p>由 Manus AI 强力驱动</p>
-    </footer>
+    <!-- 点击这个链接会跳转 -->
+    <a id="redirectLink" href="http://t.me/Mrfengliu" target="_blank" rel="noopener noreferrer">
+        <!-- 图片会由JavaScript动态加载进来 -->
+        <img id="displayImage" alt="点击查看详情">
+    </a>
     <script src="script.js"></script>
 </body>
 </html>
